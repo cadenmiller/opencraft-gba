@@ -1,0 +1,6 @@
+#ifndef OPENCRAFT_GBA_NOISE_H
+#define OPENCRAFT_GBA_NOISE_H
+
+
+
+#endif /* OPENCRAFT_GBA_NOISE_H */

@@ -1,0 +1,13 @@
+#ifndef OPENCRAFT_GBA_BLOCK_H
+#define OPENCRAFT_GBA_BLOCK_H
+
+#define BLOCKS_MAX (127)
+
+typedef enum block_t
+{
+    OPENCRAFT_BLOCK_STONE = 0,
+    OPENCRAFT_BLOCK_DIRT = 1,
+    OPENCRAFT_BLOCK_GRASS = 2
+} block_t;
+
+#endif /* OPENCRAFT_GBA_BLOCK_H */

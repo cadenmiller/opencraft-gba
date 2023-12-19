@@ -1,0 +1,6 @@
+#ifndef OPENCRAFT_GBA_STANDARD_H
+#define OPENCRAFT_GBA_STANDARD_H
+
+#include <stdint.h>
+
+#endif /* OPENCRAFT_GBA_STANDARD_H */
