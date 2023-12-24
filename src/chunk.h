@@ -3,15 +3,19 @@
 
 #include "voxel.h"
 #include "vector.h"
+ 
+namespace opencraft {
 
-#define CHUNK_WIDTH 16
-#define CHUNK_WIDTH_SQUARED (CHUNK_WIDTH * CHUNK_WIDTH)
+const int ChunkWidth = 16;
+const int ChunkWidthSquared = (ChunkWidth * ChunkWidth);
 
-typedef struct chunk_t
+struct chunk
 {
-    vector2_t   position;
-    bool        is_dirty;
-    voxel_t     data[CHUNK_WIDTH_SQUARED];
-} chunk_t;
+    vector2     position;
+    bool        isDirty;
+    voxel       data[ChunkWidthSquared];
+} chunk;
+
+} /* namespace opencraft */
 
 #endif /* OPENCRAFT_GBA_CHUNK_H */

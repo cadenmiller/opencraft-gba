@@ -1,10 +1,12 @@
-#ifndef OPENCRAFT_GBA_COLOR_H
-#define OPENCRAFT_GBA_COLOR_H
-
 #include "standard.h"
 
-#define RGB15(red, green, blue) (uint16_t)((red) | ((green) << 5) | ((blue) << 10))
+namespace opencraft {
 
-typedef uint16_t color_t;
+using color = uint16_t;
 
-#endif /* OPENCRAFT_GBA_COLOR_H */
+inline constexpr color RGB15(uint32_t red, uint32_t green, uint32_t blue)
+{
+    return ((red) | ((green) << 5) | ((blue) << 10));
+} 
+
+} /* namespace opencraft */

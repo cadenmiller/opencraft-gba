@@ -3,10 +3,14 @@
 
 #include <stdint.h>
 
-typedef struct vector2_t
+namespace opencraft {
+
+struct vector2
 {
     int16_t x;
     int16_t y; 
-} vector2_t;
+};
+
+} /* namespace opencraft */
 
 #endif /* OPENCRAFT_GBA_VECTOR_H */

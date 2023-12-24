@@ -1,14 +1,14 @@
-#ifndef OPENCRAFT_GBA_PLAYER_H
-#define OPENCRAFT_GBA_PLAYER_H
+#pragma once
 
 #include "sprite.h"
 
-#define OPENCRAFT_MAX_PLAYERS 4
+namespace opencraft {
 
-typedef struct player_t
+const int MaxPlayers = 4;
+
+struct player : public sprite
 {
-    sprite_t sprite;
-    
-} player_t;
+    char name[20];
+};
 
-#endif /* OPENCRAFT_GBA_PLAYER_H */
+} /* namespace opencraft */

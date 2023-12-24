@@ -1,8 +1,15 @@
-#ifndef OPENCRAFT_GBA_DISPLAY_H
-#define OPENCRAFT_GBA_DISPLAY_H
+#pragma once
 
+#include "vector.h"
 #include "color.h"
 
-void display_clear(color_t clear_color);
+namespace opencraft {
 
-#endif /* OPENCRAFT_GBA_DISPLAY_H */
+struct display
+{
+    const vector2 dimensions{240, 160}; /* Gameboy Advance screen dimensions. */
+
+    static void clear(color color);
+};
+
+} /* namespace opencraft */
